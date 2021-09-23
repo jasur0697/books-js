@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBook.uz</title>
+  <link rel="stylesheet" href="css/bootstrap5.min.css">
+
+  <style>
+     .movie__img {
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header bg-danger py-2 px-4">
+    <div class="container-md">
+    <div class="header-top d-flex align-items-center justify-content-between container-xxl">
+      <a href="/pokemons.html" class="header-logo__link text-decoration-none">
+        <h1 class="h2 text-white" style="font-weight: 600;">Mybook.uz</h1>
+      </a>
+      <a class="text-decoration-none text-white" href="#"></a>
+    </div>
+  </div>
+  </header>
+
+
+  <section>
+    <h2 class="visually-hidden">Books list</h2>
+    <div class="books__list row">
+      <p class="text-center">Books will be displayed soon... Please, be patient.</p>
+    </div>
+  </section>
+
+  <template id="books-item-template">
+    <div class="text-center books__item col-sm-6 col-md-4 mb-4 mt-4">
+      <div class="book card w-75 h-100 m-auto">
+        <img class="book__img card-img-top" src="https://picsum.photos/200/170" alt="Picture" width="300" height="300">
+        <div class="card-body d-flex flex-column">
+          <h3 class="book__title h4 mb-0 card-title">Book title</h3>
+          <p class="book__author h6 mb-0 card-text">Book author</p>
+         
+          <div class="d-flex flex-column flex-wrap justify-content-between mb-3  mt-3 small">
+            <span class="d-flex align-items-center me-2">
+              <img class="me-1" src="images/globe-solid.svg" alt="country icon" width="16" height="16">
+              <span class="book__country">English</span>
+            </span>
+            <span class="d-flex align-items-center me-2">
+              <img class="me-1" src="images/language-solid.svg" alt="language icon" width="16" height="16">
+              <span class="book__language">England</span>
+            </span>
+            <span class="d-flex align-items-center me-2">
+              <img class="me-1" src="images/calendar-week-solid.svg" alt="" width="16" height="16">
+              <span class="book__year">2001</span>
+            </span>
+            <span class="d-flex align-items-center ">
+              <img class="me-1" src="images/book-open-solid.svg" alt="" width="16" height="16">
+              <span class="book__pages">150</span>
+            </span>
+          </div>
+
+          <!-- <p class="book__categories card-text">Thriller, Comedy, Action</p> -->
+          <div class="d-flex mt-auto">
+            <button class="flex-grow-1 btn btn-outline-danger btn-sm js-bookmark-button">Bookmark</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+     
+
+  <script src="js/books.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
